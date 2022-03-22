@@ -14,7 +14,7 @@ const databaseUrl = `mysql://${dbUser}:${dbPassword}/${dbHost}:${dbPort}/${dbNam
 const port = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
-    res.send("Teste: " + databaseUrl);
+    res.send("Database URL: " + databaseUrl);
 });
 
 app.listen(port, () => {
